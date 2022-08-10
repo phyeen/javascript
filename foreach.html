@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>js array methods</h2> 
+
+    <p>calls function once for every element.</p>
+
+    <p id="demo"></p>
+    <script>
+        var txt ="";
+        var numbers = [45,4,9,16,25]
+        numbers.forEach(myFunction);
+        document.getElementById("demo").innerHTML = txt;
+
+        function myFunction(value, index, array) {
+            txt = txt + value + "<br>";
+        }
+        </script>
+</body>
+</html>

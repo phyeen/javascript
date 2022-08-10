@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+            var carName = "Volvo"; //Global scope
+            myFunction();
+
+            function myFunction() {
+                document.getElementById("demo").innerHTML = "I can display" + carName
+            }
+           
+        </script>
+    </body>
+</html>

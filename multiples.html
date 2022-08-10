@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <p id="multiples"></p>
+    
+</head>
+<body>
+    <script>
+        var name = 1;
+    
+    while(name <= 100)
+    {    
+    if(name % 3 ==0 && name % 5==0){
+        document.write("fizzbuzz" + "<br>");
+    
+    }
+    else if(name % 3 ==0){
+        document.write("fizz" + "<br>");
+    }
+   else if(name % 5 ==0){
+    document.write("buzz" + "<br>");
+   }
+    
+    else{
+        document.write(name + "<br>");
+    }
+name++;
+    }
+    
+    </script>
+</body>
+</html>

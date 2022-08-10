@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2> js const</h2>
+        <p id="demo"></p>
+      <!--  <script>
+            try{
+                const PI=3.141592653589793;
+                PI = 3.14;
+            }
+           catch(err) {
+                let x =4; // allowed
+            }
+            document.getElementById("demo").innerHTML = err;
+
+           
+        </script> -->
+        <h2>Javascript objects</h2>
+        <p> An object method is a function definition, stored as a 
+            property value.
+        </p>
+        <p id="demo"></p>
+        <script>
+            //create an object:
+            var person = {firstname:"john" ,
+                          lastname:"doe" ,
+                          id:"5566",
+                          fullname: function() {
+                            return this.firstname + "" + this.lastname;
+                          }
+                        };
+            //Display some from the object:
+            document.getElementById("demo").innerHtml =person.fullname();
+        </script>
+    </body>
+</html>
+<!--
+    objectname.property;
+    objectm=name.functionName();
+-->
+

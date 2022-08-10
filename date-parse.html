@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript Date.parse()</h2>
+
+    <p>Date.parse() returns the number of milliseconds
+        between the date and january 1,1970:
+    </p>
+    <p id="every"></p>
+    <p id="demo"></p>
+    <p id="my_month"></p>
+    <p id="my_day"></p>
+    <p id="my_date"></p>
+    <p id="my_hours"></p>
+    <p id="my_minutes"></p>
+    <p id="my_seconds"></p>
+
+
+    <script>
+        var month =["january", "february", "march", "april",
+    "may", "june", "july", "august", "september", "october", 
+"november", "december"];
+        var d = new Date();
+
+        document.getElementById("every").innerHTML = d;
+        document.getElementById("demo").innerHTML = d.getFullYear();
+        document.getElementById("my_month").innerHTML = d.getMonth();
+        document.getElementById("my_day").innerHTML = d.getDay();
+        document.getElementById("my_date").innerHTML = d.getDate();
+        document.getElementById("my_hours").innerHTML = d.getHours();
+        document.getElementById("my_minutes").innerHTML = d.getMinutes();
+        document.getElementById("my_seconds").innerHTML = d.getSeconds();
+    </script>
+</body>
+</html>
